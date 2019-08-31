@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#Contents {
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Top {
+    width: 500px;
+    height: 50px;
+    font-size: 32px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+#Display {
+    width: 1200px;
+    height: 500px;
+    background-color: lightblue;
+}
+
+button {
+    width: 250px;
+    height: 50px;
+    font-size: 32px;
+}

@@ -1,0 +1,189 @@
+/* ユニバーサルデザイン */
+* {
+	margin:0;
+    padding:0;
+}
+
+body {
+    height: 820px;
+    font-family: 'Batang','Century','Tahoma','Haettenschweiler';
+}
+
+
+#top {
+    height: 100%;
+    background-image: url(../img/topImage.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#aboutService,
+#Login,
+#NewAccount {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* クライアントがクリックしたら表示 */
+#descriptionService {
+    margin-top: 50px;
+    width: 1000px;
+    height: 400px;
+    /* 以下のようにすると、文字列は透過しない */
+    background: rgba(10,10,10,0.5);
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0px 30px;
+    display: none;
+}
+
+#button-return {
+    width: 113px;
+    height: 43px;
+    font-size: 20px;
+    /* inherit は親要素のスタイルを継承する */
+    margin: inherit;
+    margin-left: 450px;
+    cursor: pointer;
+}
+
+/* クライアントがクリックしたら表示 */
+#formLogin {
+    margin-top: 30px;
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* 以下のようにすると、文字列は透過しない */
+    background: rgba(10,10,10,0.5);
+}
+
+#formLoginBeforePush {
+    display: none;
+}
+
+.top-title {
+    font-size: 30px;
+    background-color: #FFFFCC;
+    width: 500px;
+    height: 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.top-title:hover {
+    opacity: 1.0;
+    background-color: #FFFF66;
+    border: 3px solid gray;
+    /*　ボーダーを内側につける = hover時のサイズ挙動を抑える */
+    box-sizing: border-box;
+}
+
+.formLogin {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 22px;
+}
+
+/* formの入力ボタンの設定 */
+
+.radioBtn-BF,
+.radioBtn-GF {
+    width: 20px;
+    height: 20px;
+}
+
+.inputForm-couple {
+    width: 140px;
+    height: 24px;
+    font-size: 17px;
+}
+
+.inputPassword {
+    width: 130px;
+    height: 24px;
+    font-size: 17px;
+}
+
+.Submit-Login-parent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.submitLogin {
+    width: 90px;
+    font-size: 100%;
+}
+
+
+/* 新規登録の際のダイアログﾞ */
+#dialog {
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    margin-top: 100px;
+    background: rgba(0,0,225,0.7);
+}
+
+#dialogBefore {
+    display: none;
+}
+
+.confirm {
+    margin-top: 120px;
+    font-size: 32px;
+}
+
+.answer {
+    width: 555px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 34px;
+}
+
+.cancel,
+.yes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    width: 250px;
+    height: 100px;
+    background: rgba(110,20,3,0.7);
+    cursor: pointer;
+}
+
+
+/* jQuery */
+.btn {
+    font-size: 35px;
+    width: 550px;
+    height: 75px;
+    margin: 0px 0px -10px 0px;
+}

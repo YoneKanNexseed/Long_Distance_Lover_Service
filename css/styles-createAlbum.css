@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#Contents {
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* SubContents */
+
+#SubContents {
+    width: 1000px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 800px;
+    height: 50px;
+    font-size: 32px;
+    border: 5px solid #FFD5EC;
+}
+
+#InsertTitle,
+#InsertPhoto,
+#InsertHashTag {
+    width: 800px;
+    height: 50px;
+    background-color: lightgray;
+}
+
+textarea {
+    width: 800px;
+    height: 500px;
+    font-size: 28px;
+    line-height: 1.5em;
+    border: 5px solid #FFD5EC;
+}
+
+button {
+    width: 200px;
+    height: 60px;
+    margin: 10px 0;
+    font-size: 32px;
+    cursor: pointer;
+}

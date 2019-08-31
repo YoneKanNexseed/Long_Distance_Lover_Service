@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#Contents {
+    height: 820px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Title {
+    font-size: 34px;
+    border-bottom: 3px solid;
+}
+
+#Setting {
+    height: 611px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#NameBF,
+#NameGF,
+#DayCount,
+#Photos,
+#ThemeColor,
+#BrokenUp {
+    width: 800px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    font-size: 32px;
+    padding: 10px 50px;
+}
+
+.TitleNameBF,
+.TitleNameGF,
+.title {
+    width: 400px;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+.TitleNameBF,
+.TitleNameGF {
+    padding-top: 20px;
+    height: 75px;
+}
+
+
+
+
+.nameBF,
+.nameGF,
+.day,
+.photo,
+.color,
+.broken {
+    width: 280px;
+    text-align: center;
+    background-color: blueviolet;
+}
+
+.birth {
+    opacity: 0.6;
+}
+
+
+
+button {
+    font-size: 32px;
+    cursor: pointer;
+    padding: 9px 15px;
+}
+

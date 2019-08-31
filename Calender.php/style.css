@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+table {
+    width: 1000px;
+    height: 800px;
+    margin: 15px auto;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+thead{
+    width: 1000px;
+    position: absolute;
+}
+
+thead tr th {
+    width: 500px;
+    font-size: 32px;
+}
+
+tbody {
+    width: 1000px;
+
+}
+
+tbody tr td {
+    height: 100px;
+    font-size: 22px;
+}
+
+#youbi {
+    background-color: lightcyan;
+}
+
+#youbi td {
+    font-size: 29px;
+    font: bold;
+    border: 3px solid whitesmoke;
+}
+
+
+tfoot {
+    margin-top: 30px;
+    width: 1000px;
+    position: absolute;
+}
+
+tfoot tr th {
+    width: 1000px;
+    font-size: 32px;
+
+}
+
+th {
+    background: #eee;
+}
+th, td {
+    padding: 7px;
+    text-align: center;
+}
+.youbi_0 {
+    color: red;
+}
+.youbi_6 {
+    color: blue;
+}
+.today {
+    font-weight: bold;
+}
+.gray {
+    color: #dedede;
+}
+
+.js {
+    margin-top: 20px;
+    padding-top: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 33px;
+    text-align: center;
+    background: rgba(128, 128, 128, 0.5);
+    color: whitesmoke;
+}
+
+#selects {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    display: none;
+}

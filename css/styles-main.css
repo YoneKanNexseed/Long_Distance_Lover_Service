@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+#Header {
+    height: 100px;
+    background-color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#ServiceLogo img {
+    width: 290px;
+    height: 90px;
+}
+
+#ServiceTitle {
+    font-size: 33px;
+    font-style: italic;
+    font: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding-top: 10px;
+    width: 490px;
+    height: 90px;
+    margin-right: -100px;
+}
+
+#Button {
+    font-size: 33px;
+    width: 390px;
+    height: 90px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Button div {
+    border: 2px solid black;
+    padding: 10px;
+    background-color: lightgrey;
+}
+
+/* slideshow */
+
+#Slideshow {
+    background-image: url(../img/red.jpg);
+    background-size: cover;
+    background-position: inherit;
+    background-repeat: no-repeat;
+    height: 830px;
+
+}
+
+/* profile */
+
+#Profile {
+    margin-top: 50px;
+    height: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+#BF-profile,
+#GF-profile {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#DayCount {
+    width: 300px;
+    height: 150px;
+    background: rgba(222, 0, 0, 0.1);
+    border: groove;
+    margin: auto -100px;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#DayCountDisplay {
+    font-size: 34px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+/* profile in detail */
+
+#BFface-image,
+#GFface-image {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border: 10px dotted salmon;
+    border-radius: 50%;
+}
+
+#BFface-image {
+    background-image: url(../img/yuto.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#GFface-image {
+    background-image: url(../img/maya.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#BFface-description,
+#GFface-description {
+    /* margin-top 15px; でprofileの上下の空間は残り35px height400pxで指定しているから */
+    margin-top: 15px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    font-size: 21px;
+}
+
+/* Album */
+
+#Album {
+    height: 1200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#AlbumTitle,
+#CalenderTitle {
+    width: 500px;
+    height: 80px;
+    margin-top: 150px;
+    background-color: white;
+    font-size: 45px;
+    font-style: italic;
+    text-align: center;
+    border-bottom: 5px solid red;
+}
+
+#AlbumDisplay {
+    width: 1300px;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#AlbumDisplay-row1,
+#AlbumDisplay-row2 {
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.albums {
+    width: 300px;
+    height: 310px;
+    background-color: lightpink;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.albums-title,
+.albums-image,
+.albums-description {
+    width: 250px;
+    background-color: white;
+    border: none;
+    text-align: center;
+    font-size: 22px;
+}
+
+.albums-title {
+    height: 35px;
+}
+
+.albums-image {
+    height: 200px;
+}
+
+.albums-image img {
+    height: 200px;
+    width: 250px;
+}
+
+.albums-description {
+    height: 60px;
+}
+
+/* Calender */
+
+#Calender {
+    height: 1800px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#CalenderDisplay {
+    width: 1300px;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: brown; */
+}
+
+#CalenderDisplay-Detail-title {
+    margin-top: 50px;
+    width: 1000px;
+}
+
+#CalenderDisplay-Detail {
+    display: none;
+    width: 1000px;
+    height: 300px;
+    background-color: brown;
+}
+
+/* footer */
+
+#Footer {
+    margin-top: 100px;
+    height: 70px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#Developer {
+    font-size: 21px;
+}
