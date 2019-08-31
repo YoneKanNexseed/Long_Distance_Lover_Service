@@ -11,40 +11,58 @@
 <body>
 
     <div id="schedules">
-        <div id="schedule">
+    
             <div id="selectDate">セレクトされた日付を返す</div>
-            <div>
-                <select name="" id="">
-                    <?php for($i = 1; $i <= 24; $i++) { ?>
-                    <option value=""><?php echo $i ;?>時</option>
-                    <?php }?>
-                </select>
 
-                <select name="" id="">
-                    <?php $i = 0; ?>
-                    <?php while($i < 60) { 
-                      $i += 5;  
-                    ?>
-                    <option value=""><?php echo $i ;?>分</option>
-                    <?php }?>
-                </select>
-                    
-                <select name="" id="">
-                    <?php for($i = 1; $i <= 24; $i++) { ?>
-                    <option value=""><?php echo $i ;?>時</option>
-                    <?php }?>
-                </select>
+            <button id="addSchedule">予定を追加</button>
+            
+            <div id="schedule"> 
 
-                <select name="" id="">
-                    <?php for($i = 1; $i <= 24; $i++) { ?>
-                    <option value=""><?php echo $i ;?>時</option>
-                    <?php }?>
-                </select>
-            </div>
-            <div></div>
+                <div id="Times"><!--ここのコンテンツを増やす-->
+                    <div id="Time">
+                            <div>スケジュール</div>
+                            <div id="timeStart">
+                                <select name="" id="">
+                                    <?php for($i = 1; $i <= 24; $i++) { ?>
+                                    <option value=""><?php echo $i ;?>時</option>
+                                    <?php }?>
+                                </select>
+                                <select name="" id="">
+                                    <?php $i = 0; ?>
+                                    <?php while($i < 60) { ?>
+                                    <option value=""><?php echo $i ;?>分</option>
+                                    <?php $i += 5; }?>
+                                </select>
+                            </div>
+                            
+                            <div>から</div>
 
-        </div>
-    </div>
+                            <div id="timeEnd">
+                                <select name="" id="">
+                                    <?php for($i = 1; $i <= 24; $i++) { ?>
+                                    <option value=""><?php echo $i ;?>時</option>
+                                    <?php }?>
+                                </select>
+                                <select name="" id="">
+                                    <?php $i = 0; ?>
+                                    <?php while($i < 60) { ?>
+                                    <option value=""><?php echo $i ;?>分</option>
+                                    <?php $i += 5; }?>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div id="Description">
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <button>取り消す</button>
+
+                    </div> <!-- Time -->
+                </div> <!-- Times -->
+            </div> <!-- schedule -->
+        </div> <!-- selectDate -->
+    </div> <!-- schedules -->
 
     <?php require_once "Calender.php/HelpsCreateCalender.php"; ?>
 
