@@ -1,7 +1,7 @@
 $(function(){
 
     let cell = $('tbody').children('tr:first').siblings().children()
-    console.log( cell.text() );
+    // console.log( cell.text() );
 
     cell.each(function(index, element) {
 
@@ -15,24 +15,44 @@ $(function(){
             let selectDate = $(element).text();
             let selectMonth = $('#Month').text();
             //キャッシュ　が問題　コマンド＋シフト＋R
-            let text = $('<div class="js"></div>').text(selectDate + 'th ' + selectMonth);
+            let text = selectDate + 'th ' + selectMonth;
+
+            $('#selectDate').text(text);
+
+            $('#schedules').css('display', 'flex');
 
 
-
-            if($('#CalenderDisplay-Detail-title').text() == ''){
-                $('#CalenderDisplay-Detail-title').append(text);
-                $('#CalenderDisplay-Detail').css('display', 'flex');
-            } else {
-                $('#CalenderDisplay-Detail-title').text('');
-                $('#CalenderDisplay-Detail-title').append(text);
-                $('#CalenderDisplay-Detail').css('display', 'flex');
-
-            }
 
         });
+
+
     });
 
 
+    $('#addSchedule').on('click', function(){
+        let clone = $('#Times').clone();
+        // console.log(clone);
+        clone.insertAfter($('#Times'));
+        // console.log(clone);
+    });
+
+
+    $('.deleteSchedule').on('click', function(){
+        $(this).each(function(index, element){
+            console.log(index);
+            console.log(element);
+            $(this).on('click', function() {
+                $('#Times').remove();
+            });
+        });
+    })
+
+
+    $('#back button').on('mouseover', function(){
+        $(this).css('cursor', 'pointer');
+    }).on('click', function(){
+        $('#schedules').css('display', 'none');
+    });
 
 
 

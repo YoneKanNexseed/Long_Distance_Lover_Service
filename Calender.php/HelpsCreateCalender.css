@@ -110,10 +110,13 @@ th, td {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    display: none;
 }
 
 #selectDate {
     color: white;
+    padding-top: 50px;
+    font-size: 45px;
 }
 
 #schedule {
@@ -148,4 +151,9 @@ th, td {
 
 #addSchedule {
     margin-right: 650px;
+}
+
+#back button {
+    color: black;
+    width: 500px;
 }

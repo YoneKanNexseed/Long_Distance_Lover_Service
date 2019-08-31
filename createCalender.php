@@ -15,7 +15,7 @@
             <div id="selectDate">セレクトされた日付を返す</div>
 
             <button id="addSchedule">予定を追加</button>
-            
+
             <div id="schedule"> 
 
                 <div id="Times"><!--ここのコンテンツを増やす-->
@@ -56,15 +56,19 @@
                             <textarea name="" id="" cols="30" rows="10"></textarea>
                         </div>
 
-                        <button>取り消す</button>
+                        <button class="deleteSchedule">取り消す</button>
 
                     </div> <!-- Time -->
                 </div> <!-- Times -->
+                <div id="back"><button>カレンダーに戻る</button></div>
             </div> <!-- schedule -->
         </div> <!-- selectDate -->
     </div> <!-- schedules -->
 
+
+
     <?php require_once "Calender.php/HelpsCreateCalender.php"; ?>
+    
 
 
 
@@ -74,12 +78,12 @@
 
 
 
-    <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>
 
-    <script scr="Calender.php/HelpsCreateCalender.js"></script>
+    <script src="Calender.php/HelpsCreateCalender.js"></script>
     <script src="js/app-createCalender.js"></script>
+
 </body>
 </html>
