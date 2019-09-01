@@ -2,6 +2,8 @@
 
     require_once "functions.php";
 
+    $coupleName = $_POST['coupleName'];
+
     $nameBf = $_POST['nameBf'];
     $birthYearBf = $_POST['birthYearBf'];
     $birthMonthBf = $_POST['birthMonthBf'];
@@ -19,6 +21,9 @@
     $fileImg = $_POST['fileImg'];
 
     $themeColor = $_POST['themeColor'];
+
+    $password = $_POST['password'];
+    $passwordConfirm = $_POST['passwordConfirm'];
 
 
     var_dump($nameBf."<br>");
@@ -48,6 +53,10 @@
     <h1>確認画面</h1>        
     <table>
         <tr>
+            <td>カップル名</td>
+            <td><?php echo h($coupleName); ?></td>
+        </tr>
+        <tr>
             <td>彼氏名</td>
             <td><?php echo h($nameBf); ?></td>
         </tr>
@@ -75,11 +84,18 @@
             <td>テーマカラー</td>
             <td><?php echo h($themeColor); ?></td>
         </tr>
+        <tr>
+            <td>カップルパスワード</td>
+            <td><?php echo h($password); ?></td>
+        </tr>
     </table>
 
     <button onclick="history.back();">戻る</button>
 
     <form action="thanks.php" method="POST">
+
+    <!-- カップル名 -->
+    <input class="input" type="hidden" name="coupleName" value="<?php echo h($coupleName); ?>">
 
     <!-- 彼氏・彼女の名前 -->
     <input class="input" type="hidden" name="nameBf" value="<?php echo $nameBf;?>">
@@ -103,6 +119,9 @@
 
     <!-- テーマカラー -->
     <input class="input" type="hidden" name="themeColor" value="<?php echo $themeColor;?>">
+
+    <!-- カップルパスワード -->
+    <input class="input" type="hidden" name="password" value="<?php echo $password?>">
 
     <input type="submit" value="OK">
     </form>

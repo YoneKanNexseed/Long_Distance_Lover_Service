@@ -23,12 +23,13 @@
     align-items: center;
 }
 
+#CoupleName,
 #NameBF,
 #NameGF,
 #DayCount,
 #Photos,
 #ThemeColor,
-#BrokenUp {
+#Password {
     width: 800px;
     height: 80px;
     display: flex;

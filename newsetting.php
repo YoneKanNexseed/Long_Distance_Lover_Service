@@ -16,6 +16,10 @@
         <!-- 設定画面 -->
         <form action="ok.php" method="POST">
         <div id="Setting">
+            <div id="CoupleName">
+                <div>カップル名</div>
+                <div><input type="text" name="coupleName" placeholder="カップル名"></div>
+            </div>
             <div id="NameBF">
                 <div class="TitleNameBF">彼氏名</div>
                 <div class="nameBF">
@@ -115,6 +119,12 @@
                 </div>
             </div>
 
+            <div id="Password">
+                <div>カップルパスワード</div>
+                <div><input type="password" name="password" placeholder="パスワードを入力"></div>
+                <div><input type="password" name="passwordConfirm" placeholder="確認用"></div>
+            </div>
+
         </div>
         <!-- 更新 or 新規登録 ボタン -->
         
@@ -123,6 +133,9 @@
     </div>
 
     <?php 
+    $coupleName = $_POST['coupleName'];
+
+
     $nameBf = $_POST['nameBf'];
     $birthYearBf = $_POST['birthYearBf'];
     $birthMonthBf = $_POST['birthMonthBf'];
@@ -141,6 +154,14 @@
 
     $themeColor = $_POST['themeColor'];
 
+
+    $password = $_POST['password'];
+    $passwordConfirm = $_POST['passwordConfirm'];
+
+
+    var_dump($coupleName);
+    var_dump($password);
+    var_dump($passwordConfirm);
 
     var_dump($nameBf."<br>");
     var_dump($birthYearBf."<br>");

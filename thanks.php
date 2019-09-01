@@ -2,6 +2,8 @@
     require_once "functions.php";
     require_once "dbConnect.php";
 
+    $coupleName = h($_POST['coupleName']);
+
     $nameBf = h($_POST['nameBf']);
     $birthYearBf = h($_POST['birthYearBf']);
     $birthMonthBf = h($_POST['birthMonthBf']);
@@ -20,13 +22,16 @@
 
     $themeColor = h($_POST['themeColor']);
 
+    $password = h($_POST['password']);
+    $passwordConfirm = h($_POST['passwordConfirm']);
+
 
     $stmt = $dbh->prepare('INSERT INTO LoversInformations 
-        (nameBf, birthYearBf, birthMonthBf, birthDayBf, nameGf, birthYearGf, birthMonthGf, birthDayGf, 
-        dayCountYear, dayCountMonth, dayCountDay, fileImg, themeColor, created_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, now() )');
+        (coupleName, nameBf, birthYearBf, birthMonthBf, birthDayBf, nameGf, birthYearGf, birthMonthGf, birthDayGf, 
+        dayCountYear, dayCountMonth, dayCountDay, fileImg, themeColor, password, created_at)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,  now() )');
 
-    $stmt->execute([$nameBf, $birthYearBf, $birthMonthBf, $birthDayBf, $nameGf, $birthYearGf, $birthMonthGf, $birthDayGf, $dayCountYear, $dayCountMonth, $dayCountDay, $fileImg, $themeColor]);
+    $stmt->execute([$coupleName, $nameBf, $birthYearBf, $birthMonthBf, $birthDayBf, $nameGf, $birthYearGf, $birthMonthGf, $birthDayGf, $dayCountYear, $dayCountMonth, $dayCountDay, $fileImg, $themeColor, $password]);
     
 ?>
 
