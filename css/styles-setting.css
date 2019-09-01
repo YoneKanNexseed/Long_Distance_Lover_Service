@@ -60,9 +60,9 @@
 .nameGF,
 .day,
 .photo,
-.color,
-.broken {
-    width: 280px;
+.color
+{
+    width: 390px;
     text-align: center;
     background-color: blueviolet;
 }
@@ -77,5 +77,17 @@ button {
     font-size: 32px;
     cursor: pointer;
     padding: 9px 15px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    font-size: 23px;
+}
+
+select {
+    height: 30px;
+    width: 80px;
+    font-size: 21px;
 }
 

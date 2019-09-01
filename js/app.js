@@ -88,6 +88,7 @@ cancel[0].addEventListener('click', function() {
 
 
 
+
 /* 完さんへの質問
 
 1. classNameで取得したときの、値の取れ方について・・
