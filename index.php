@@ -22,15 +22,17 @@
         <div id="Login">
             <div class="top-title">ログイン</div> 
             <div id="formLoginBeforePush">
-                <form action="" class="formLogin">
-                    <div>カップル名: <input type="text" name="couple" class="inputForm-couple"></div>
+
+                <form action="" class="formLogin" method="POST">
+                    <div>カップル名: <input type="text" name="coupleName" class="inputForm-couple"></div>
                     <div>
-                        <input type="radio" name="BForGF" value="彼氏" class="radioBtn-BF">彼氏
-                        <input type="radio" name="BForGF" value="彼女" class="radioBtn-GF">彼女        
+                        <label><input type="radio" name="select" value="nameBf" class="radioBtn-BF">彼氏</label>
+                        <label><input type="radio" name="select" value="nameGf" class="radioBtn-GF">彼女</label>
                     </div>
                     <div>パスワード: <input type="password" name="password" value="" class="inputPassword"></div>
                     <div class="Submit-Login-parent"><input type="submit" value="Login" class="submitLogin"></div>
                 </form>
+
             </div> 
         </div>
         <!-- 新規登録 -->
@@ -54,3 +56,63 @@
     <script src="js/app.js"></script>
 </body>
 </html>
+
+<?php
+
+require_once "dbConnect.php";
+
+
+
+$coupleName = $_POST['coupleName'];
+$password = $_POST['password'];
+$select = $_POST['select'];
+
+
+$stmt = $dbh->prepare('SELECT coupleName, password FROM LoversInformations WHERE coupleName = ? ');
+
+$params = [];
+$params[] = $coupleName;
+// $params[] .= $password;
+
+$stmt->execute($params);
+
+//$stmt->execute($coupleName); だとできない・エラーになる
+ 
+
+$results = $stmt->fetchAll();
+
+// var_dump($results);
+echo '<br>'; 
+
+for($i=0; $i < count($results); $i++){
+    $result = $results[$i];
+    // var_dump($result['password']);
+    echo '<br>';
+    if($password == $result['password']){
+        header('location: main.php');
+        exit();//←忘れずに！
+    } else {
+        echo "ログインできません";
+    }
+}
+
+
+
+
+
+
+echo '<br>'; 
+
+// if($coupleName == )
+
+
+
+
+    var_dump($coupleName);
+    var_dump($password);
+    var_dump($select);
+
+?>
+
+
+
