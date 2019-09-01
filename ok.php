@@ -26,19 +26,19 @@
     $passwordConfirm = $_POST['passwordConfirm'];
 
 
-    var_dump($nameBf."<br>");
-    var_dump($birthYearBf."<br>");
-    var_dump($birthMonthBf."<br>");
-    var_dump($birthDayBf."<br>");
-    var_dump($nameGf."<br>");
-    var_dump($birthYearGf."<br>");
-    var_dump($birthMonthGf."<br>");
-    var_dump($birthDayGf."<br>");
-    var_dump($dayCountYear."<br>");
-    var_dump($dayCountMonth."<br>");
-    var_dump($dayCountDay."<br>");
-    var_dump($fileImg."<br>");
-    var_dump($themeColor."<br>");
+    // var_dump($nameBf."<br>");
+    // var_dump($birthYearBf."<br>");
+    // var_dump($birthMonthBf."<br>");
+    // var_dump($birthDayBf."<br>");
+    // var_dump($nameGf."<br>");
+    // var_dump($birthYearGf."<br>");
+    // var_dump($birthMonthGf."<br>");
+    // var_dump($birthDayGf."<br>");
+    // var_dump($dayCountYear."<br>");
+    // var_dump($dayCountMonth."<br>");
+    // var_dump($dayCountDay."<br>");
+    // var_dump($fileImg."<br>");
+    // var_dump($themeColor."<br>");
 
 
 ?>

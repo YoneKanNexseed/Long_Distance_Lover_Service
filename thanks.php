@@ -23,7 +23,7 @@
     $themeColor = h($_POST['themeColor']);
 
     $password = h($_POST['password']);
-    $passwordConfirm = h($_POST['passwordConfirm']);
+
 
 
     $stmt = $dbh->prepare('INSERT INTO LoversInformations 
