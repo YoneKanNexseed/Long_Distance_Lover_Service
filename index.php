@@ -19,11 +19,12 @@
             </div>
         </div>
         <!-- ログイン -->
+        <?php require_once ('Login.php'); ?>
         <div id="Login">
             <div class="top-title">ログイン</div> 
             <div id="formLoginBeforePush">
 
-                <form action="" class="formLogin" method="POST">
+                <form action="" class="formLogin" method="GET">
                     <div>カップル名: <input type="text" name="coupleName" class="inputForm-couple"></div>
                     <div>
                         <label><input type="radio" name="select" value="nameBf" class="radioBtn-BF">彼氏</label>
@@ -56,63 +57,6 @@
     <script src="js/app.js"></script>
 </body>
 </html>
-
-<?php
-
-require_once "dbConnect.php";
-
-
-
-$coupleName = $_POST['coupleName'];
-$password = $_POST['password'];
-$select = $_POST['select'];
-
-
-$stmt = $dbh->prepare('SELECT coupleName, password FROM LoversInformations WHERE coupleName = ? ');
-
-$params = [];
-$params[] = $coupleName;
-// $params[] .= $password;
-
-$stmt->execute($params);
-
-//$stmt->execute($coupleName); だとできない・エラーになる
- 
-
-$results = $stmt->fetchAll();
-
-// var_dump($results);
-echo '<br>'; 
-
-for($i=0; $i < count($results); $i++){
-    $result = $results[$i];
-    // var_dump($result['password']);
-    echo '<br>';
-    if($password == $result['password']){
-        header('location: main.php');
-        exit();//←忘れずに！
-    } else {
-        echo "ログインできません";
-    }
-}
-
-
-
-
-
-
-echo '<br>'; 
-
-// if($coupleName == )
-
-
-
-
-    var_dump($coupleName);
-    var_dump($password);
-    var_dump($select);
-
-?>
 
 
 

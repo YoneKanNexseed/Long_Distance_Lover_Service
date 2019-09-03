@@ -18,11 +18,11 @@
         <!-- Button -->
         <div id="Button">
             <!-- album -->
-            <div>日記📝</div>
+            <div><a href="">日記📝</a></div>
             <!-- calender -->
-            <div>予定✍️</div>
+            <div><a href="createCalender.php">予定✍️</a></div>
             <!-- setting -->
-            <div>設定✏️</div>
+            <div><a href="">設定✏️</a></div>
         </div>
     </div>
 

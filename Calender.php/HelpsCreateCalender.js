@@ -20,32 +20,41 @@ $(function(){
             $('#selectDate').text(text);
 
             $('#schedules').css('display', 'flex');
-
-
-
         });
-
-
     });
 
 
-    $('#addSchedule').on('click', function(){
+    
+
+    $(document).on('click', '#addSchedule', function(){
         let clone = $('#Times').clone();
-        // console.log(clone);
         clone.insertAfter($('#Times'));
-        // console.log(clone);
     });
 
+    // $('#addSchedule').on('click', function(){
+    //     let clone = $('#Times').clone();
+    //     clone.insertAfter($('#Times'));
+    // });
 
-    $('.deleteSchedule').on('click', function(){
+
+    $(document).on("click", '.deleteSchedule', function () {
         $(this).each(function(index, element){
-            console.log(index);
-            console.log(element);
             $(this).on('click', function() {
                 $('#Times').remove();
             });
         });
-    })
+    });
+
+
+
+
+    // $('.deleteSchedule').on('click', function(){
+    //     $(this).each(function(index, element){
+    //         $(this).on('click', function() {
+    //             $('#Times').remove();
+    //         });
+    //     });
+    // })
 
 
     $('#back button').on('mouseover', function(){
