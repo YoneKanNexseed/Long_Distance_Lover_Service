@@ -37,6 +37,16 @@ input[type="text"] {
     background-color: lightgray;
 }
 
+#InsertHashTag {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.feelings {
+    padding: 20px 0;
+}
+
 textarea {
     width: 800px;
     height: 500px;
@@ -52,3 +62,4 @@ button {
     font-size: 32px;
     cursor: pointer;
 }
+

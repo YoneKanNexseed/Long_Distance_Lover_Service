@@ -18,7 +18,7 @@
         <!-- Button -->
         <div id="Button">
             <!-- album -->
-            <div><a href="">日記📝</a></div>
+            <div><a href="createAlbum.php">日記📝</a></div>
             <!-- calender -->
             <div><a href="createCalender.php">予定✍️</a></div>
             <!-- setting -->
@@ -93,6 +93,7 @@
     <!-- calender -->
     <div id="Calender">
         <div id="CalenderTitle">9月の予定表</div>
+        <div id="result"></div>
         <div id="CalenderDisplay">
             <?php require_once "Calender.php/index.php"; ?>
         </div>
