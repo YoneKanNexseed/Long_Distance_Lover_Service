@@ -144,10 +144,10 @@
             <tr>
                 <!-- 前月へのリンク -->
                 <!-- ？　パラメータ　値を渡すイメージ -->
-                <th><a href="?t=<?php echo h($prev); ?>">前へ</a></th>
+                <th><span class="calendar-change-button" data-month="<?php echo h($prev); ?>">前へ</span></th>
                 <th id="Month"><?php echo h($yearMonth); ?></th>
                 <!-- 翌月へのリンク -->
-                <th id="nextMonth"><a href="?t=<?php echo h($next); ?>">次へ</a></th>
+                <th id="nextMonth"><span class="calendar-change-button" data-month="<?php echo h($next); ?>">次へ</a></th>
             </tr>
         </thead>
         <!-- ボディー -->

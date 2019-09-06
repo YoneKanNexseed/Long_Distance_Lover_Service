@@ -76,7 +76,7 @@
                     <div class="albums-image"><img src="img/topImage.jpg" alt=""></div>
                     <div class="albums-description">タイトル:こんばんは<br>日時:2019/8/17</div>    
                 </div>
-                <div class="albums">                        
+                <div class="albums">
                     <div class="albums-title">#Happy</div>
                     <div class="albums-image"><img src="img/yuto.JPG" alt=""></div>
                     <div class="albums-description">タイトル:こんにちは<br>日時:2019/9/7</div>    
@@ -95,7 +95,7 @@
         <div id="CalenderTitle">9月の予定表</div>
         <div id="result"></div>
         <div id="CalenderDisplay">
-            <?php require_once "Calender.php/index.php"; ?>
+
         </div>
     <!-- Detail of calender -->
         <div id="CalenderDisplay-Detail-title"></div>
@@ -116,5 +116,6 @@
 
     <script src="js/app-main.js"></script>
     <script src="Calender.php/app.js"></script>
+    <script src="js/calendar.js"></script>
 </body>
 </html>
